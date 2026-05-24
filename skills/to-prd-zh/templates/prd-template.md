@@ -1,6 +1,6 @@
 # PRD：<功能名称>
 
-> 由 `daily-workflow-zh` skill 阶段 ② 生成。父级对话 / Issue：<!-- 链接 -->
+> 由 `to-prd-zh` 生成。父级对话 / Issue：<!-- 链接 -->
 
 ## 问题陈述
 
