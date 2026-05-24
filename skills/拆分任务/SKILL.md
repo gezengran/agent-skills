@@ -1,11 +1,11 @@
 ---
-name: to-issues-zh
+name: 拆分任务
 description: |
   将计划、规格或 PRD 拆成可独立领取的 Issue，采用 tracer bullet 纵向切片。
   在用户要把计划变成任务、创建实现工单、或拆分工作时使用。
 ---
 
-# 拆 Issue（to-issues）
+# 拆分任务
 
 把计划拆成**可独立领取**的 Issue，每条为**纵向切片（tracer bullet）**。
 
