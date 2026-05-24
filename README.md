@@ -49,3 +49,12 @@ skills/
 ├── 测试驱动/SKILL.md
 └── 架构夯实/SKILL.md
 ```
+
+## 测试
+
+```bash
+python3 scripts/validate-skills.py
+python3 -m pytest tests/ -q
+```
+
+详见 [tests/SKILL_SMOKE_TEST_REPORT.md](./tests/SKILL_SMOKE_TEST_REPORT.md)。
