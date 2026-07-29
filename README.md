@@ -1,10 +1,14 @@
 # agent-skills
 
-[mattpocock/skills](https://github.com/mattpocock/skills) 五个日常 skill 的**中文版**，彼此独立，按意图分别触发。
+Agent Skills 合集：日常开发工作流（[mattpocock/skills](https://github.com/mattpocock/skills) 中文版）与 Obsidian 笔记操作技能。
 
 参考：[5 Agent Skills I Use Every Day](https://www.aihero.dev/5-agent-skills-i-use-every-day)
 
-## 推荐顺序（工作习惯，非合并 skill）
+## 日常开发工作流
+
+五个 skill 彼此独立，按意图分别触发。
+
+### 推荐顺序（工作习惯，非合并 skill）
 
 ```
 推敲方案 → 写需求文档 → 拆分任务 → 测试驱动
@@ -12,7 +16,7 @@
          架构夯实（周期性，或开发高峰后）
 ```
 
-## Skill 列表
+### Skill 列表
 
 | 目录 / 名称 | 对应上游 | 典型触发 |
 |-------------|----------|----------|
@@ -22,14 +26,24 @@
 | [测试驱动](./skills/测试驱动/SKILL.md) | `tdd` | TDD、红绿重构、先写测试 |
 | [架构夯实](./skills/架构夯实/SKILL.md) | `improve-codebase-architecture` | 架构夯实、梳理架构、让代码更好改 |
 
+## Obsidian
+
+三个 skill 覆盖 Obsidian vault 的 Markdown 语法、Bases 数据库视图与 CLI 操作。格式与日常开发 skill 一致：主文件精简，细节在 `references/`。
+
+| 目录 / 名称 | 典型触发 |
+|-------------|----------|
+| [obsidian-markdown](./skills/obsidian-markdown/SKILL.md) | wikilinks、callout、frontmatter、嵌入、Obsidian 笔记 |
+| [obsidian-bases](./skills/obsidian-bases/SKILL.md) | `.base` 文件、Bases、表格/卡片视图、筛选、公式 |
+| [obsidian-cli](./skills/obsidian-cli/SKILL.md) | 命令行操作 vault、搜索笔记、插件/主题开发调试 |
+
 ## 在 Cursor 中使用
 
-将需要的 `skills/<中文目录名>` 放入 Cursor 的 skills 路径（或在本仓库中引用），对话中说明 skill 名称即可，例如：
+将需要的 `skills/<目录名>` 放入 Cursor 的 skills 路径（或在本仓库中引用），对话中说明 skill 名称即可，例如：
 
 - 「用 **推敲方案** 帮我把这个导出功能想透」
-- 「用 **写需求文档** 把当前对话写成 PRD」
+- 「用 **obsidian-markdown** 给这篇笔记加上 callout 和属性」
 
-安装上游英文原版（可选）：
+安装上游英文原版（日常开发 skill，可选）：
 
 ```bash
 npx skills@latest add mattpocock/skills
@@ -47,7 +61,14 @@ skills/
 │   ├── SKILL.md
 │   └── templates/issue-slice-template.md
 ├── 测试驱动/SKILL.md
-└── 架构夯实/SKILL.md
+├── 架构夯实/SKILL.md
+├── obsidian-markdown/
+│   ├── SKILL.md
+│   └── references/
+├── obsidian-bases/
+│   ├── SKILL.md
+│   └── references/
+└── obsidian-cli/SKILL.md
 ```
 
 ## 测试
