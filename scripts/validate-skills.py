@@ -15,7 +15,9 @@ except ImportError:
 
 ROOT = Path(__file__).resolve().parents[1]
 SKILLS_ROOT = ROOT / "skills"
-KNOWN_SKILLS = frozenset({"推敲方案", "写需求文档", "拆分任务", "测试驱动", "架构夯实"})
+KNOWN_SKILLS = frozenset(
+    {"推敲方案", "写需求文档", "拆分任务", "测试驱动", "极简实现", "架构夯实"}
+)
 
 
 def parse_skill(path: Path) -> tuple[dict, str]:

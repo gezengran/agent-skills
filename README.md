@@ -6,14 +6,14 @@ Agent Skills 合集：日常开发工作流（[mattpocock/skills](https://github
 
 ## 日常开发工作流
 
-五个 skill 彼此独立，按意图分别触发。
+六个 skill 彼此独立，按意图分别触发。`极简实现` 挂在实现阶段，与 `测试驱动` 搭档；推敲 / PRD / 架构时不要默认开启。
 
 ### 推荐顺序（工作习惯，非合并 skill）
 
 ```
-推敲方案 → 写需求文档 → 拆分任务 → 测试驱动
+推敲方案 → 写需求文档 → 拆分任务 → 测试驱动 + 极简实现
               ↑
-         架构夯实（周期性，或开发高峰后）
+         架构夯实（周期性，或开发高峰后；与极简实现分开触发）
 ```
 
 ### Skill 列表
@@ -24,6 +24,7 @@ Agent Skills 合集：日常开发工作流（[mattpocock/skills](https://github
 | [写需求文档](./skills/写需求文档/SKILL.md) | `to-prd` | 写成 PRD、整理需求文档 |
 | [拆分任务](./skills/拆分任务/SKILL.md) | `to-issues` | 拆成 issue、纵向切片 |
 | [测试驱动](./skills/测试驱动/SKILL.md) | `tdd` | TDD、红绿重构、先写测试 |
+| [极简实现](./skills/极简实现/SKILL.md) | [ponytail](https://github.com/DietrichGebert/ponytail)（理念） | 极简实现、别过度设计、YAGNI、最简方案 |
 | [架构夯实](./skills/架构夯实/SKILL.md) | `improve-codebase-architecture` | 架构夯实、梳理架构、让代码更好改 |
 
 ## Obsidian
@@ -41,6 +42,7 @@ Agent Skills 合集：日常开发工作流（[mattpocock/skills](https://github
 将需要的 `skills/<目录名>` 放入 Cursor 的 skills 路径（或在本仓库中引用），对话中说明 skill 名称即可，例如：
 
 - 「用 **推敲方案** 帮我把这个导出功能想透」
+- 「用 **极简实现** 写这个日期选择，别过度设计」
 - 「用 **obsidian-markdown** 给这篇笔记加上 callout 和属性」
 
 安装上游英文原版（日常开发 skill，可选）：
@@ -61,6 +63,7 @@ skills/
 │   ├── SKILL.md
 │   └── templates/issue-slice-template.md
 ├── 测试驱动/SKILL.md
+├── 极简实现/SKILL.md
 ├── 架构夯实/SKILL.md
 ├── obsidian-markdown/
 │   ├── SKILL.md

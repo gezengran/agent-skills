@@ -17,3 +17,4 @@ def test_validate_skills_exits_zero_on_current_repo():
     )
     assert result.returncode == 0, result.stdout + result.stderr
     assert "结构校验: 通过" in result.stdout
+    assert "极简实现" in result.stdout
